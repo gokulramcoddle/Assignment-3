@@ -200,7 +200,7 @@ text-align: left;
 }
 .plug-img{ 
     flex-basis: 50%;
-    max-width: 680px;
+    min-width: 680px;
     height:552px;  
 }
 .plug-img img{

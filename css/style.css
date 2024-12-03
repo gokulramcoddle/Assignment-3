@@ -87,6 +87,9 @@ nav ul{
     z-index: 30;
     align-items: center;
 }
+.cart-res, .login-res{
+    display: none;
+}
 .cl-con{
     display: flex;
     gap: 20px;
@@ -120,19 +123,19 @@ nav ul{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    max-height: 100%;
+    min-height:100vh;
     width: 100%;
 }
 .contentbox h1{
     display: inline-block;
     color: white;
     font-family: "Genos", sans-serif;
-    font-size:170px;
+    font-size:175px;
     font-weight: 700;
-    line-height: 140px;
-    letter-spacing: -5px;
+    line-height: 150px;
+    letter-spacing: -6px;
     margin-top: 11.5%;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     text-align: left;
 }
 .contentbox p{
@@ -140,8 +143,8 @@ nav ul{
     color: white;
     font-size: 27px;
     font-weight: 400;
-    line-height: 30px;
-    letter-spacing :0.5%;
+    line-height: 40px;
+    letter-spacing:0.5%;
     text-align: left;
     text-decoration-skip-ink: none;
 }
@@ -160,11 +163,9 @@ nav ul{
     line-height: 20px;
     letter-spacing: 0.5px;
     text-align:center;
-    margin-top: 3%;
+    margin-top: 2%;
+    margin-bottom: 30px;
     
-}
-.contentbox{
-    min-height: 750px;
 }
 .title-col{
     flex-basis: 40%;    
@@ -191,6 +192,9 @@ nav ul{
     width: 250px;
     height: 200px;
 }
+.hit-coldiv{
+    display: none;
+}
 .hit{
     display: flex;
     gap: 70px;
@@ -214,7 +218,7 @@ text-align: left;
 }
 .plug-img{ 
     flex-basis: 50%;
-    max-width: 680px;
+    width: 680px;
     max-height:552px;  
 }
 .plug-img img{
@@ -325,7 +329,6 @@ text-align: left;
     flex-basis: 24%;
     border: 1px solid #DDE1E6;
     width: 300px;
-    height: 422px;
     padding: 24px 16px 16px 16px;  
 }
  .car-box img{
@@ -361,7 +364,7 @@ text-align: left;
     line-height: 20px;
     letter-spacing: 0.5px;
     text-align: left;
-    padding: 10px 8px 0px 0px;
+    padding: 10px 8px 30px 0px;
 }
 .shopbtn a{
     font-family: "Anybody", serif;
@@ -416,7 +419,7 @@ text-align: left;
 }
  .dta-cnt-head p{
     font-family: "Roboto",sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 25.2px;
     text-align: left;
@@ -467,6 +470,9 @@ text-align: left;
 .cpy-ryt{
     flex-basis: 20%;
 }
+.cpy-ryt-2{
+    display: none;
+}
 .cpy-ryt pre{
     color: white;
     font-family: "Anybody",serif;
@@ -475,15 +481,29 @@ text-align: left;
     line-height: 19.6px;
     text-align: left;   
 }
-
+@media (max-width:1450px) {
+    .contentbox h1{
+       font-size: 150px;
+    }
+    .contentbox{
+        padding-bottom: 30px;
+    }
+    .head{
+        height:100%;
+        min-height: unset;
+    }
+}
 @media (max-width:1200px){
-   
+     .head{
+        height: 735px;
+     }
     .container{
         width: 95%;
         margin: 0 auto;
     }
     .contentbox{
         max-height: 100vh;
+        padding: 0;
     }
     nav ul{
         gap:5px;
@@ -589,7 +609,9 @@ text-align: left;
 
 }
 @media (max-width:1080px) {
-    
+    .head{
+        height: 100%;
+    }
     .logo-con img{
         max-width: 120px;
         max-height: 29px;
@@ -766,7 +788,7 @@ text-align: left;
         line-height: 0;
     }
     .contentbox h1{
-        font-size: 70px;
+        font-size: 90px;
     }
     .contentbox p{
         font-size: 15px;
@@ -774,8 +796,9 @@ text-align: left;
     .contentbox button{
         font-size: 10px;
         font-weight: 600;
+        padding: 0%;
         width: 110px;
-        height: 50px;
+        height: 40px;
         line-height: 0%;
     }
     .title-col h1 {
@@ -792,14 +815,14 @@ text-align: left;
         font-size: 12px;
     }
     .hit-cols p{
-        font-size: 8px;
+        font-size: 10px;
     }
     .evplug-con{
         justify-content: unset;
        gap: 25px;
     }
      .plug-content p {
-        font-size: 8px;
+        font-size: 9.5px;
     }
     .evplug-con{
         padding-top: 30px;
@@ -820,7 +843,7 @@ text-align: left;
         font-size: 12px;
     }
     .con-ntm p {
-        font-size: 5px;
+        font-size: 8px;
     }
     .con-ntm{
         max-width: 251px;
@@ -857,7 +880,7 @@ text-align: left;
         font-size: 9px;
      }
      .car-box p{
-        font-size: 8px;
+        font-size: 9px;
      }
      .car-box a{
         font-size: 11.5px;
@@ -872,10 +895,10 @@ text-align: left;
         line-height: 18px;
     }
     .cpy-ryt pre {
-        font-size: 8px;
+        font-size: 9px;
     }
     .ftr-nav a {
-        font-size: 6px;
+        font-size: 9px;
         margin-left: 5px;
     }
     .fa-brands{
@@ -892,7 +915,7 @@ text-align: left;
         flex-wrap: nowrap;
     }
     nav ul li{
-        font-size: 7px;
+        font-size: 8.5px;
         line-height: normal;
 
     }
@@ -905,15 +928,25 @@ text-align: left;
     .cl-con .login{
         font-size: 9px;
     }
+    .contentbox{
+        min-height: 405px;
+    }
+    .contentbox h1{
+        font-size: 70px;
+        line-height:60px;
+        margin-bottom: 10px;
+        letter-spacing: normal;
+    }
     .contentbox p {
         margin-top:10px ;
+        line-height: 20px;
     }
     .title-col{
         display: inline-block;
     }
     .title-col h1 {
-       line-height:16px;
-       font-size: 19px;
+       line-height:14px;
+       font-size: 25px;
     }
     .mpr-con h1{
         font-size: 30px;
@@ -950,7 +983,9 @@ text-align: left;
     .car-box img{
         width:103px
     }
-    
+    .car-box img{
+        width:103px
+    }
     .con-ntm{
         max-height: 100px;
     }
@@ -959,48 +994,167 @@ text-align: left;
     }
 }
 
-@media (max-width:467px){
-    nav ul{
-     gap: 5px;
+@media (max-width:535px){
+    .container{
+        width: 90%;
     }
+     nav{
+        display: none;
+     }
+     .login, .cart{
+        display: none;
+     }
+     .cart-res, .login-res, .menu{
+        display: unset;
+        color: #080808;
+     }
     .contentbox{
-        min-height: 350px;
+        min-height: 300px;
     }
     .contentbox h1{
-        margin-top:20% ;
-        font-size: 50px;
+        margin-top:16% ;
+        font-size: 44px;
         line-height: 40px;
+        letter-spacing: 1px;
     }
     .contentbox p{
-        font-size: 12px;
+        font-size: 10px;
+        letter-spacing: 0.7px;
+    }
+    .contentbox button{
+        width: 80px;
+        height: 25px;
+        font-size: 8px;
     }
     .cl-con{
-        gap: 5px;
+        gap: 10px;
+    }
+    .hit{
+        display: block;
+        padding-top: 40px;
+        max-height: 100%;
+    }
+    .title-col{
+        display: block;
+        text-align: center;
     }
     .title-col h1{
-        font-size: 15px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .hit-coldiv{
+        width: 100%;
+    }
+    .hit-cols{
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+        height: 100%;
+        flex-basis: 0;
+        padding:20px 0px;
     }
     .hit-cols h2{
-        font-size: 10px;
+        display: block;
+        font-size: 15px;
+    }
+    .hit-cols p{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .evplug-con{
+        display: block;
+        padding-bottom: 25px;
+    }
+    .evplug-con p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .plug-img{
+        max-height: 100%;
+        width: 100%;
+    }
+    .plug-content{
+        padding-top: 40px;
+        padding-bottom: 15px;
+    }
+    .ntm-cnt{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .ntm h1{
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+    .ntm h2{
+        font-size: 16px;
+    }
+    .ntm-p{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .con-ntm p{
+        font-size: 13px;
+    }
+    .con-ntm{
+        padding: 30px;
+    }
+    .car-list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .car-box h2{
+        font-size: 15px;
+    }
+    .car-box p{
+        font-size: 13px;
+    }
+    .car-box {
+        max-height: 360px;
+    }
+    .car-box img{
+        width: 100%;
+    }
+    .car-box a{
+        font-size: 15px;
+        padding-bottom: 30px;
+    }
+    .dta-con{
+        flex-direction: column-reverse;
+        padding-top: 0%;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
     }
     .dta-cnt-head h1{
-        font-size: 17px;
+        font-size: 35px;
         line-height: 12px;
+        text-align: center;
+    }
+    .dta-cnt-btn{
+         justify-content: center;
+         align-items: center;
     }
     .dta-cnt-head p{
-        line-height: 10px;
+        line-height: normal;
+        font-size: 15px;
+        text-align: center;
     }
     .dta-cnt img{
-        max-width:80px;
-        max-height: 20px;
+        min-width:80px;
+        min-height: 20px;
     }
     .dta-img{
-        max-height: 200px;
         overflow-y: hidden;
     }
     .dta-cnt{
         height: 200px;
         overflow-y: hidden;
+    }
+    .cpy-ryt{
+        display: none;
     }
     nav ul li{
         font-size: 5px;
@@ -1011,14 +1165,34 @@ text-align: left;
     .cl-con .cart{
         font-size: 7px;
     }
-    .evplug-con p{
-        font-size: 6px;
-    }
     .ftr-sp{
         gap: 5px;
     }
     .ftr-nav a{
-        gap: 2px;
+        font-size: 9px;
         margin-left:0;
+    }
+    .ftr-nav{
+      gap: 6px;
+      flex-basis: 50%;
+    }
+    .fa-brands{
+        font-size: unset;
+    }
+    .ftr-sp{
+        flex-basis:30%;
+    }
+    .cpy-ryt-2{
+        display:unset;
+    }
+    .cpy-ryt-2 p{
+        margin: 0 auto;
+        padding:10px 0;
+        text-align: center;
+        font-size: 10px;
+        color: white;
+    }
+    .ftr{
+        padding-bottom: 5px;
     }
 }
